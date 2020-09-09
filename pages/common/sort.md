@@ -1,6 +1,7 @@
 # sort
 
 > Sort lines of text files.
+> More information: <https://www.gnu.org/software/coreutils/manual/html_node/sort-invocation.html>.
 
 - Sort a file in ascending order:
 
@@ -29,3 +30,7 @@
 - Sort human-readable numbers (in this case the 5th field of `ls -lh`):
 
 `ls -lh | sort -h -k 5`
+
+- Sort numbers with exponents:
+
+`sort --general-numeric-sort {{path/to/file}}`
